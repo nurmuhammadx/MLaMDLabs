@@ -20,10 +20,19 @@
             <td><input type="text" id="mass2" value="" /></td>
         </tr>
         <tr>
-            <td><input type="button"  value="Объединение" onclick="union();"/></td>
+            <td><input type="button"  value="Объединение" onclick="main();"/></td>
         </tr>
     </table>
 </form>
 
+<div>
+    <span id="unification"></span>
+    <span id="intersection"></span>
+    <span id="diff"></span>
+    <span id="diff2"></span>
+    <span id="sym"></span>
+</div>
+
 </body>
 </html>
+
