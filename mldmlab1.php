@@ -7,7 +7,7 @@
     <script type="text/javascript" src="/scripts/scripts.js"></script>
 </head>
 <body>
-<h1>Лабораторные работа №1</h1>
+<h1>Лабораторная работа №1</h1>
 
 <form method="" action="">
     <table>
@@ -20,17 +20,19 @@
             <td><input type="text" id="mass2" value="" /></td>
         </tr>
         <tr>
-            <td><input type="button"  value="Объединение" onclick="main();"/></td>
+            <td><input type="button"  value="Сделать расчет" onclick="main();"/></td>
         </tr>
     </table>
 </form>
 
+<h3>Результат выполнение операции:</h3>
+
 <div>
     <span id="unification"></span>
     <span id="intersection"></span>
-    <span id="diff"></span>
-    <span id="diff2"></span>
-    <span id="sym"></span>
+    <span id="difference"></span>
+    <span id="difference2"></span>
+    <span id="symmetricDifference"></span>
 </div>
 
 </body>

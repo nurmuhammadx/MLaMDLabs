@@ -21,7 +21,6 @@ function searchErrors(str)
     return true;
 }
 
-
 /**
  *Основная функция для считования данных и расчета
  */
@@ -30,40 +29,32 @@ function main()
     a = document.getElementById("mass1").value;
     b = document.getElementById("mass2").value;
 
+    //Проверка на ошибку
     if(searchErrors(a) && searchErrors(b))
     {
         // Получаем два множества из строк, сплитуем по пробелу
-        const first_set = new Set(a.split(" "));
-        const second_set = new Set(b.split(" "));
+        let value_a = new Set(a.split(" "));
+        let value_b = new Set(b.split(" "));
         //Объединяем два множества
-        const unification = new Set([...first_set, ...second_set]);
-        document.getElementById('unification').innerHTML = "Объединение: " + [...unification.values()];
-        //
-        let intersection = new Set([...first_set].filter(x => second_set.has(x)));
-        document.getElementById('intersection').innerHTML = "Пересечение: " + [...intersection.values()];
+        let unification = new Set([...value_a, ...value_b]);
+        document.getElementById('unification').innerText = "Объединение: " + [...unification.values()] + "\n";
+        //Пересечение двух множеств
+        let intersection = new Set([...value_a].filter(x => value_b.has(x)));
+        document.getElementById('intersection').innerText = "Пересечение: " + [...intersection.values()] + "\n";
+        //Дополнение (Разница) A\B множест
+        let difference = new Set([...value_a].filter(x => !value_b.has(x)));
+        document.getElementById('difference').innerText = "Разница A/B: " + [...difference.values()] + "\n";
+        //Дополнение (Разница) B\A множест
+        let difference2 = new Set([...value_b].filter(x => !value_a.has(x)));
+        document.getElementById('difference2').innerText = "Разница B/A: " + [...difference2.values()] + "\n";
+        //Симметричная разница множест
+        let union = new Set([...value_a, ...value_b]);
+        let inters = new Set([...value_a].filter(x => value_b.has(x)));
+        let symmetricDifference = new Set([...union].filter(x => !inters.has(x)));
+        document.getElementById('symmetricDifference').innerText = "Симметричная разница: " + [...symmetricDifference.values()];
     }
     else
     {
         alert(error_text);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
