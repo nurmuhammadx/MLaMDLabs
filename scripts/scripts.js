@@ -7,7 +7,7 @@ function searchErrors(str)
     let mass = str.split(" ");
     if(a.length === 0 || b.length === 0)
     {
-        error_text = "Массив не должен быть пустым";
+        error_text = "Поля множества не должены быть пустыми.";
         return false;
     }
     for(let i = 0; i < mass.length; i++)
@@ -33,8 +33,8 @@ function main()
     if(searchErrors(a) && searchErrors(b))
     {
         // Получаем два множества из строк, сплитуем по пробелу
-        let value_a = new Set(a.split(" "));
-        let value_b = new Set(b.split(" "));
+        const value_a = new Set(a.split(" "));
+        const value_b = new Set(b.split(" "));
         //Объединяем два множества
         let unification = new Set([...value_a, ...value_b]);
         document.getElementById('unification').innerText = "Объединение: " + [...unification.values()] + "\n";

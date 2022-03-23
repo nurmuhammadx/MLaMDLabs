@@ -12,11 +12,11 @@
 <form method="" action="">
     <table>
         <tr>
-            <td>Первый массив</td>
+            <td>Первое множество</td>
             <td><input type="text" id="mass1" value="" /></td>
         </tr>
         <tr>
-            <td>Второй массив</td>
+            <td>Второе множество</td>
             <td><input type="text" id="mass2" value="" /></td>
         </tr>
         <tr>
