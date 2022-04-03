@@ -3,38 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Лабораторная работа 1</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <script type="text/javascript" src="/scripts/lab1.js"></script>
+    <link rel="stylesheet" href="/styles/mainStyle.css">
+    <link rel="stylesheet" href="/styles/lab1Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pacifico&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../scripts/lab1.js"></script>
 </head>
 <body>
-<h1>Лабораторная работа №1</h1>
-
-<form method="" action="">
-    <table>
-        <tr>
-            <td>Первое множество</td>
-            <td><input type="text" id="mass1" value="" /></td>
-        </tr>
-        <tr>
-            <td>Второе множество</td>
-            <td><input type="text" id="mass2" value="" /></td>
-        </tr>
-        <tr>
-            <td><input type="button"  value="Сделать расчет" onclick="main();"/></td>
-        </tr>
-    </table>
-</form>
-
-<h3>Результат выполнение операции:</h3>
-
-<div>
-    <span id="unification"></span>
-    <span id="intersection"></span>
-    <span id="difference"></span>
-    <span id="difference2"></span>
-    <span id="symmetricDifference"></span>
+<div class="container-lab">
+    <h1>Лабораторная работа №1</h1>
+    <form method="" action="">
+        <table>
+            <tr>
+                <td><input type="text" id="mass1" class="decor" placeholder="Введите первое множество..."/></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="mass2" class="decor" placeholder="Введите второе множество..."/></td>
+            </tr>
+        </table>
+    </form>
+    <input type="button"  value="Сделать расчет" class="btn" onclick="main();"/>
+    <h3 class="text-h3">↓Результат выполнение операции↓</h3>
+    <div class="block-result">
+        <span id="unification"></span>
+        <span id="intersection"></span>
+        <span id="difference"></span>
+        <span id="difference2"></span>
+        <span id="symmetricDifference"></span>
+    </div>
 </div>
-
 </body>
 </html>
 
