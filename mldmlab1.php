@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="/styles/mainStyle.css">
     <link rel="stylesheet" href="/styles/lab1Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pacifico&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pacific&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="../scripts/lab1.js"></script>
+    <script type="text/javascript" src="/scripts/lab1.js"></script>
 </head>
 <body>
 <div class="container-lab">
     <h1>Лабораторная работа №1</h1>
-    <form method="" action="">
+    <form>
         <table>
             <tr>
                 <td><input type="text" id="mass1" class="decor" placeholder="Введите первое множество..."/></td>
