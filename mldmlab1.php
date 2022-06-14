@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Лабораторная работа 1</title>
     <link rel="stylesheet" href="/styles/mainStyle.css">
-    <link rel="stylesheet" href="/styles/lab1Style.css">
+    <link rel="stylesheet" href="/styles/lab1.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pacific&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
