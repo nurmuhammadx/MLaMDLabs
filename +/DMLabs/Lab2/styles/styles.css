@@ -1,0 +1,102 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  background-image: url("");
+  }
+
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: 400;
+  }
+  /*--------------------*/
+  
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 10px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+  }
+  
+  .lab {
+    font-size: 72px;
+    margin-bottom: 50px;
+  }
+  
+  .enter {
+    font-size: 28px;
+    width: 800px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    height: 150px;
+  }
+  
+  .button {
+    align-self: center;
+    font-size: 36px;
+    width: 250px;
+    background-color: rgb(30, 8, 71);
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .by {
+    font-size: 20px;
+    align-self: center;
+    margin-top: 50px;
+  }
+  
+  .results {
+    margin-top: 30px;
+    width: 400px;
+    background-color: rgb(30, 8, 71);
+    height: 105px;
+    border-radius: 8px;
+    border: 2px solid white;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  
+  .results span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  
